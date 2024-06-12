@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Project", "1.Project", "{0B3E6B56-10BE-4BA0-896C-A6FF9C303131}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Feature", "2.Feature", "{824C69E0-E0C9-4240-8183-B243E5AB0851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Foundation", "3.Foundation", "{5E71E0CA-B9E8-4AE5-993C-8BC8C851B459}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{14C3B8A9-F0FE-474E-A0BF-6FD9E13EBA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.Foundation.Configuration", "src\Foundation\Configuration\code\GettingStarted.Foundation.Configuration\GettingStarted.Foundation.Configuration.csproj", "{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageContent", "PageContent", "{0C9AE7D2-66E8-4B6E-B245-E17ECAA113B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.Feature.PageContent", "src\Feature\PageContent\code\GettingStarted.Feature.PageContent\GettingStarted.Feature.PageContent.csproj", "{9F532B5D-9A1B-452D-A3AF-B68993B2DA25}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D} = {5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{63B3A231-215F-44F8-A487-65716F2552AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.Project.Website", "src\Project\Website\code\GettingStarted.Project.Website\GettingStarted.Project.Website.csproj", "{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D} = {5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25} = {9F532B5D-9A1B-452D-A3AF-B68993B2DA25}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14C3B8A9-F0FE-474E-A0BF-6FD9E13EBA5B} = {5E71E0CA-B9E8-4AE5-993C-8BC8C851B459}
+		{5A35AB4F-9D9B-4735-BFCD-D687D8606B8D} = {14C3B8A9-F0FE-474E-A0BF-6FD9E13EBA5B}
+		{0C9AE7D2-66E8-4B6E-B245-E17ECAA113B2} = {824C69E0-E0C9-4240-8183-B243E5AB0851}
+		{9F532B5D-9A1B-452D-A3AF-B68993B2DA25} = {0C9AE7D2-66E8-4B6E-B245-E17ECAA113B2}
+		{63B3A231-215F-44F8-A487-65716F2552AD} = {0B3E6B56-10BE-4BA0-896C-A6FF9C303131}
+		{10C0CD1F-800F-413A-B6A8-BA1CCC6806EE} = {63B3A231-215F-44F8-A487-65716F2552AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31823423-8A31-4A6A-9230-4E22222A5B3B}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
